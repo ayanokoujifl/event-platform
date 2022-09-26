@@ -1,3 +1,4 @@
+import { Link, Route } from 'react-router-dom'
 import { Logo } from '../components/Logo'
 
 export function Subscribe() {
@@ -34,12 +35,20 @@ export function Subscribe() {
               type="email"
               placeholder="Digite seu e-mail"
             />
+            {/*
             <button
               type="submit"
               className="mt-4 bg-green-500 uppercase py-4 rounded font-bold text-sm hover:bg-green-700 transition-colors"
             >
               Garantir minha vaga
             </button>
+  */}
+            <Link
+              to={'/event'}
+              className="mt-4 bg-green-500 uppercase py-4 rounded font-bold text-sm hover:bg-green-700 transition-colors text-center"
+            >
+              Entrar
+            </Link>
           </form>
         </div>
       </div>
